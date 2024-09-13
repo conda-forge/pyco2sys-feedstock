@@ -1,13 +1,13 @@
 {% set name = "PyCO2SYS" %}
-{% set version = "1.8.3.2" %}
+{% set version = "1.8.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/d0/03/c5bfe4225d1b66108d38e721f7aab40e5b2275211fa0041cadb716017b19/pyco2sys-1.8.3.2.tar.gz
-  sha256: 6b816d1e89faf435fbf194ad6b653d3ad1a6526046815c3162c04352d7a0e3e9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyco2sys-{{ version }}.tar.gz
+  sha256: d96c3d0e864199370108895fa66edc802fc05f98a87abfa5b5defc80aafcdbd5
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - autograd
-    - numpy <2
+    - numpy
 
 test:
   imports:
