@@ -1,5 +1,5 @@
 {% set name = "PyCO2SYS" %}
-{% set version = "1.8.3.3" %}
+{% set version = "1.8.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyco2sys-{{ version }}.tar.gz
-  sha256: d96c3d0e864199370108895fa66edc802fc05f98a87abfa5b5defc80aafcdbd5
+  sha256: a75d94b59e1bdd9e64d33b2c475b382862badda5e45d4c9e271ec95bdbb42c2c
 
 build:
   noarch: python
